@@ -1,0 +1,14 @@
+:root {
+    --header-background-color: #262624;
+    --body-background-color: #1f1f1f;
+    --search-bar-background-color: #383838;
+}
+
+* {
+    font-family: arial;
+}
+
+body {
+    background: var(--body-background-color);
+    /* padding: 50px 0px 1000px 300px; */
+}

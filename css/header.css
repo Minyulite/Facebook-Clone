@@ -1,0 +1,132 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    background-color: var(--header-background-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header-left-section {
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.header-middle-section {
+    /* background-color: lightpink; */
+    width: 480px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.header-right-section {
+    color: white;
+    /* background-color: lightblue; */
+    display: flex;
+    /* justify-content: right; */
+    align-items: center;
+    width: 170px;
+    column-gap: 7px;
+}
+
+.header-right-section button, .header-right-section img {
+    cursor: pointer;
+}
+
+.header-right-section button:hover, .header-right-section > img:hover {
+    opacity: 0.9;
+}
+
+.header-middle-section img {
+    height: 20px;
+}
+
+.facebook-logo {
+    padding: 0 0 0 10px;
+    height: 35px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.search-bar {
+    color: rgb(228, 228, 228);
+    background-color: var(--search-bar-background-color);
+    height: 32px;
+    width: 170px;
+    border-radius: 16px;
+    border: none;
+    padding: 0 0 0 25px;
+}
+
+.search-bar::placeholder {
+    color: rgb(184, 179, 179);
+}
+
+.header-right-section button {
+    color: rgb(208, 205, 205);
+    background-color: var(--search-bar-background-color);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 9px 9px 9px 9px;
+    border: none;
+}
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 17.5px;
+    margin: 0 10px 0 0;
+}
+
+.header-middle-section div {
+    /* border: 1px solid black; */
+    /* color: rgb(208, 205, 205); */
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    margin: 3px;
+    border-radius: 7px;
+    transition: background-color 0.1s;
+    cursor: pointer;
+}
+
+.header-middle-section div:hover {
+    background-color: rgb(59, 58, 58);
+}
+
+.header-middle-section .home-page:hover {
+    background-color: var(--header-background-color);
+}
+
+.header-middle-section .home-page {
+    border-radius: 0px;
+    border-bottom : 3px solid rgb(47, 97, 247);
+}
+
+.header-right-section button {
+    display: flex;
+    align-items: center;
+}
+
+.header-right-section button img {
+    height: 16px;
+}
+
+.header-left-section div img {
+    height: 15px;
+    position: absolute;
+    top: 9px;
+    left: 5px;
+}
+
+.header-left-section div {
+    position: relative;
+}

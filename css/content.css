@@ -1,0 +1,332 @@
+.post {
+    --pd-left-right: 13px;
+    --pd-top-bottom: 8px;
+    background: var(--header-background-color);
+    width: calc(400px - 2 * var(--pd-left-right));
+    height: 90px;
+    border-radius: 9px;
+    padding: var(--pd-top-bottom) var(--pd-left-right) var(--pd-top-bottom) var(--pd-left-right);   
+}
+
+.post-top {
+    display: flex;
+    border-bottom: 1px solid rgb(67, 67, 67);
+    padding: 0 0 10px 0;
+}
+
+.post-textarea {
+    flex: 1;
+    background-color: var(--search-bar-background-color);
+    border: none;
+    border-radius: 18px;
+    color: rgb(181, 179, 179);
+    padding: 0 0 0 10px;
+    font-size: 14px;
+}
+
+.post-textarea::placeholder {
+    color: rgb(185, 185, 185);
+}
+
+.post-textarea:focus {
+    outline: none;
+}
+
+.stories {
+    width: 400px;
+    height: 180px;
+    display: flex;
+    column-gap : 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: transparent transparent;
+    flex-wrap: nowrap;
+}
+
+.stories:hover {
+    scrollbar-color: rgb(149, 147, 147, 0.6) transparent;
+}
+
+.contents {
+    width: 400px;
+}
+
+.post, .stories, .contents {
+    margin: 0 0 0 70px;
+    /* border: 1px solid red; */
+}
+
+.story, .my-story {
+    /* border: 1px solid blue; */
+    width: 100px;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+main {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.post-bottom-left {
+    display: flex;
+}
+
+.post-bottom {
+    display: flex;
+    margin: 5px 0 0 0;
+    /* padding: 10px 0 10px 0; */
+    /* border: 1px solid blue; */
+}
+
+.post-bottom-left img, .post-bottom-right img {
+    height: 17px;
+    margin: 0 5px 0 0;
+}
+
+.post-bottom-left, .post-bottom-right {
+    color: rgb(181, 179, 179);
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 35px 10px 35px;
+    /* border: 1px solid blue; */
+    border-radius: 9px;
+}
+
+.post-bottom-left:hover, .post-bottom-right:hover {
+    background-color: rgb(59, 58, 58);
+}
+
+.post-bottom-right {
+    display: flex;
+}
+
+.story-picture {
+    width: 100px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.story-profile-picture {
+    --width-and-height: 25px;
+    height: var(--width-and-height);
+    width: var(--width-and-height);
+    object-fit: cover;
+    border-radius: calc((var(--width-and-height) + 8px) / 2);
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    border: 4px solid rgb(32, 113, 244);
+}
+
+.story-username {
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(229, 227, 227);
+}
+
+.my-story-background {
+    background-color: var(--header-background-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.create-story-text {
+    position: absolute;
+    bottom: 9px;
+    left: 22px;
+    color: rgb(229, 227, 227);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add-my-story {
+    position: absolute;
+    font-size: 22px;
+    bottom: 29px;
+    left: 38px;
+    border-radius: 25px;
+    background-color: rgb(32, 113, 244);
+    color: white;
+    border: 4px solid var(--header-background-color);
+    cursor: pointer;
+}
+
+.content {
+    /* height: 300px; */
+    background: var(--header-background-color);
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.content-top {
+    position: relative;
+    height: 40px;
+}
+
+.content-profile-picture {
+    --width-and-height: 25px;
+    height: var(--width-and-height);
+    width: var(--width-and-height);
+    object-fit: cover;
+    border-radius: calc((var(--width-and-height) + 8px) / 2);
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    padding: 1.5px;
+    border: 2px solid rgb(32, 113, 244);
+}
+
+.content-username {
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(218, 217, 217);
+}
+
+.content-time-duration {
+    position: absolute;
+    left: 50px;
+    top: 28px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(148, 148, 148);   
+}
+
+.content-time-duration img {
+    height: 11px;
+    position: absolute;
+    top: 1px;
+    left: 40px;
+}
+
+.content-post-setting-image {
+    height: 5px;
+    padding-bottom: 3px;
+}
+
+.content-delete-image {
+    height: 15px;
+    width: 15px;
+    padding: 1px;
+}
+
+.content-post-setting-button {
+    background: var(--header-background-color);
+    position: absolute;
+    top: 15px;
+    right: 49px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.content-delete-button {
+    background: var(--header-background-color);
+    top: 14px;
+    right: 17px;
+    position: absolute;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.content-post-setting-button:hover, .content-delete-button:hover {
+    background: rgba(84, 84, 84, 0.7);
+}
+
+.content-image {
+    width: 400px;
+    object-fit: cover;
+}
+
+.content-text {
+    font-size: 13px;
+    color: rgb(223, 221, 221);
+    margin: 10px 0 10px 10px;
+}
+
+.content-like-image {
+    height: 17px;
+}
+
+.content-like-section {
+    margin: 5px 5px 0 5px;
+    padding-bottom: 8px;
+    display: flex;
+    color: rgb(184, 179, 179);
+    font-size: 13px;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.content-like-left-section, .content-like-right-section {
+    display: flex;
+    align-items: center;
+}
+
+.content-like-left-section {
+    column-gap: 5px;
+}
+
+.content-like-right-section {
+    column-gap: 10px;
+}
+
+.content-comment-image {
+    height: 16px;
+}
+
+.content-like-right-section-sub {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.content-bottom {
+    display: flex;
+    margin: 5px 5px 0 5px;
+    padding-bottom: 5px;
+}
+
+.content-bottom button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 179, 179);
+    background-color: var(--header-background-color);
+    border: none;
+    column-gap: 5px;
+    padding: 5px 0 5px 0;
+    border-radius: 7px;
+}
+
+.content-bottom button:hover {
+    background: rgba(84, 84, 84, 0.7);
+}
+
+.content-bottom button img {
+    height: 18px;
+}
