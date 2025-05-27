@@ -1,0 +1,23 @@
+@media (max-width: 1030px) {
+    .sidebar {
+        opacity: 0;
+    }
+
+    main {
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .right-sidebar {
+        opacity: 0;
+    }
+
+    .header-middle-section {
+        opacity: 0;
+    }
+
+    main {
+        margin: 0;
+    }
+}
